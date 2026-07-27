@@ -1,0 +1,17 @@
+# Project folder-e jao
+cd lab-test-app
+
+# .github/workflows folder banao ar workflow file oi khane rakho
+mkdir -p .github/workflows
+mv build-apk.yml .github/workflows/build-apk.yml
+
+# Git init
+git init
+git add .
+git commit -m "Initial commit - Lab Test App"
+
+# GitHub-e ekta notun repo banao (github.com e login kore "New repository")
+# tarpor eta run koro (repo URL nijer ta diye replace koro):
+git remote add origin https://github.com/<tomar-username>/<repo-name>.git
+git branch -M main
+git push -u origin main
